@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Takahisa Sasajima
 ---
 
 This is a blank Quartz installation.
