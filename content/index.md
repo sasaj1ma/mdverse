@@ -1,6 +1,11 @@
 ---
-title: Takahisa Sasajima
+title: このサイトについて
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+このウェブサイトは、[@sasaj1ma](https://www.instagram.com/sasaj1ma/) の個人サイトです。
+
+これまで個人制作プロジェクトやメモ、たまに作るカレーのレシピを載っけていきます。
+
+---
+
+[Writing](/writing) · [Projects](/projects) · [Recipes](/recipes)

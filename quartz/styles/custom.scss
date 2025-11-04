@@ -1,3 +1,184 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// Custom font declarations
+@font-face {
+  font-family: 'NHaasGroteskTXPro-55Rg';
+  src: url('/static/fonts/NHaasGroteskTXPro-55Rg.woff2') format('woff2'),
+       url('/static/fonts/NHaasGroteskTXPro-55Rg.woff') format('woff'),
+       url('/static/fonts/NHaasGroteskTXPro-55Rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TazuganeGothicStdN-Book';
+  src: url('/static/fonts/TazuganeGothicStdN-Book.woff2') format('woff2'),
+       url('/static/fonts/TazuganeGothicStdN-Book.woff') format('woff'),
+       url('/static/fonts/TazuganeGothicStdN-Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Ultra-minimal stephango.com inspired layout
+.page {
+  max-width: 100% !important;
+  padding: 0 2rem;
+
+  & > #quartz-body {
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 0;
+
+    & .center,
+    & footer,
+    & .page-header {
+      max-width: 100% !important;
+      min-width: auto !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding: 0 !important;
+    }
+
+    // Hide sidebar divs completely
+    & .sidebar {
+      display: none !important;
+    }
+  }
+}
+
+// Minimal link styling
+a {
+  font-weight: normal !important;
+  color: var(--dark) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+
+  &:hover {
+    color: var(--dark) !important;
+    text-decoration-thickness: 1px !important;
+  }
+}
+
+a.internal {
+  color: var(--dark) !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+// Simple header
+.page-header {
+  padding-bottom: 1.5rem !important;
+  margin-bottom: 2rem !important;
+  border-bottom: 1px solid var(--lightgray);
+
+  // Flex layout for header
+  & .flex-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+}
+
+// Minimal article title
+h1.article-title {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+  margin-top: 0 !important;
+}
+
+// Clean content meta
+.content-meta {
+  font-size: 0.9rem !important;
+  color: var(--gray) !important;
+  margin-bottom: 2rem !important;
+}
+
+// Minimal backlinks
+.backlinks {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--lightgray);
+}
+
+// Clean footer
+footer {
+  margin-top: 3rem !important;
+  padding-top: 2rem;
+  border-top: 1px solid var(--lightgray);
+}
+
+// Page title styling
+.page-title {
+  margin: 0 !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+
+  & h1 {
+    margin: 0 !important;
+    font-size: 1.2rem !important;
+  }
+}
+
+// Writing list styling (stephango.com inspired)
+.recent-notes {
+  margin-top: 3rem;
+
+  & h3 {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  & .recent-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  & .recent-li {
+    margin: 0;
+    padding: 0;
+  }
+
+  & .section {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.25rem 0;
+    margin: 0;
+  }
+
+  & .meta {
+    margin: 0 !important;
+    font-size: 0.9rem;
+    color: var(--gray);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  & .desc {
+    flex: 1;
+    margin: 0;
+
+    & h3 {
+      margin: 0 !important;
+      font-size: 1rem !important;
+      font-weight: normal !important;
+    }
+  }
+
+  & .tags {
+    display: none;
+  }
+}

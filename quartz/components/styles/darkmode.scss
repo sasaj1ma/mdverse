@@ -2,21 +2,47 @@
   cursor: pointer;
   padding: 0;
   position: relative;
-  background: none;
-  border: none;
-  width: 20px;
-  height: 20px;
+  background: var(--lightgray);
+  border: 2px solid var(--gray);
+  width: 50px;
+  height: 26px;
   margin: 0;
-  text-align: inherit;
+  border-radius: 20px;
   flex-shrink: 0;
+  transition: all 0.3s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--dark);
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+  }
 
   & svg {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: calc(50% - 10px);
-    fill: var(--darkgray);
-    transition: opacity 0.1s ease;
+    width: 14px;
+    height: 14px;
+    top: 4px;
+    fill: var(--gray);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  & .dayIcon {
+    left: 6px;
+  }
+
+  & .nightIcon {
+    right: 6px;
+  }
+
+  &:hover {
+    border-color: var(--darkgray);
   }
 }
 
@@ -29,19 +55,25 @@
 }
 
 :root[saved-theme="dark"] .darkmode {
+  background: var(--lightgray);
+
+  &::before {
+    transform: translateX(24px);
+  }
+
   & > .dayIcon {
-    display: none;
+    opacity: 0.4;
   }
   & > .nightIcon {
-    display: inline;
+    opacity: 1;
   }
 }
 
 :root .darkmode {
   & > .dayIcon {
-    display: inline;
+    opacity: 1;
   }
   & > .nightIcon {
-    display: none;
+    opacity: 0.4;
   }
 }
