@@ -2,25 +2,9 @@
 
 // put your custom CSS here!
 
-// Custom font declarations
-@font-face {
-  font-family: 'NHaasGroteskTXPro-55Rg';
-  src: url('/static/fonts/NHaasGroteskTXPro-55Rg.woff2') format('woff2'),
-       url('/static/fonts/NHaasGroteskTXPro-55Rg.woff') format('woff'),
-       url('/static/fonts/NHaasGroteskTXPro-55Rg.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'TazuganeGothicStdN-Book';
-  src: url('/static/fonts/TazuganeGothicStdN-Book.woff2') format('woff2'),
-       url('/static/fonts/TazuganeGothicStdN-Book.woff') format('woff'),
-       url('/static/fonts/TazuganeGothicStdN-Book.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+// FONTPLUS font configuration
+body, h1, h2, h3, h4, h5, h6, p, div, span {
+  font-family: 'NHaasGroteskTXPro-55Rg', 'TazuganeGothicStdN-Book', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
 // Ultra-minimal stephango.com inspired layout
