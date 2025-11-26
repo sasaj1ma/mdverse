@@ -51,6 +51,8 @@ export default (() => {
           </>
         )}
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://webfont.fontplus.jp" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://webfont.fontplus.jp" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <meta name="og:site_name" content={cfg.pageTitle}></meta>
@@ -98,7 +100,7 @@ export default (() => {
             return resource
           }
         })}
-        <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?xIjXNmzOwb4%3D&box=iCS2mBZa6QI%3D&aa=1&ab=2"></script>
+        <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?xIjXNmzOwb4%3D&box=iCS2mBZa6QI%3D&aa=1&ab=2" async></script>
       </head>
     )
   }
