@@ -100,7 +100,7 @@ export default (() => {
             return resource
           }
         })}
-        <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?xIjXNmzOwb4%3D&box=iCS2mBZa6QI%3D&aa=1&ab=2"></script>
+        <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?xIjXNmzOwb4%3D&box=iCS2mBZa6QI%3D&delay=2&pm=1&aa=1&ab=1"></script>
       </head>
     )
   }
