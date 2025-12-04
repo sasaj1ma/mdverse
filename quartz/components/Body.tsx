@@ -11,7 +11,7 @@ const Body: QuartzComponent = ({ children }: QuartzComponentProps) => {
   return <div id="quartz-body">{children}</div>
 }
 
-Body.afterDOMLoaded = [clipboardScript, paltScript, fontplusScript]
+Body.afterDOMLoaded = [paltScript, clipboardScript, fontplusScript]
 Body.css = clipboardStyle
 
 export default (() => Body) satisfies QuartzComponentConstructor
